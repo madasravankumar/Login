@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		5E2505702215B27C002852F5 /* Login.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E25056E2215B27C002852F5 /* Login.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E2505782215B2A6002852F5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2505762215B2A6002852F5 /* LoginViewController.swift */; };
+		5E2505792215B2A6002852F5 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E2505772215B2A6002852F5 /* LoginViewController.xib */; };
+		5E2505C12215B633002852F5 /* LoginWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2505C02215B633002852F5 /* LoginWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5E25056B2215B27C002852F5 /* Login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E25056E2215B27C002852F5 /* Login.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Login.h; sourceTree = "<group>"; };
 		5E25056F2215B27C002852F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E2505762215B2A6002852F5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Controller/LoginViewController.swift; sourceTree = "<group>"; };
+		5E2505772215B2A6002852F5 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LoginViewController.xib; path = Controller/LoginViewController.xib; sourceTree = "<group>"; };
+		5E2505C02215B633002852F5 /* LoginWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,9 @@
 			isa = PBXGroup;
 			children = (
 				5E25056E2215B27C002852F5 /* Login.h */,
+				5E2505C02215B633002852F5 /* LoginWrapper.swift */,
+				5E2505762215B2A6002852F5 /* LoginViewController.swift */,
+				5E2505772215B2A6002852F5 /* LoginViewController.xib */,
 				5E25056F2215B27C002852F5 /* Info.plist */,
 			);
 			path = Login;
@@ -95,6 +104,7 @@
 				TargetAttributes = {
 					5E25056A2215B27C002852F5 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -120,6 +130,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E2505792215B2A6002852F5 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E2505782215B2A6002852F5 /* LoginViewController.swift in Sources */,
+				5E2505C12215B633002852F5 /* LoginWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +274,7 @@
 		5E2505742215B27C002852F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -277,6 +291,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ecknologic.Login;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +300,7 @@
 		5E2505752215B27C002852F5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
